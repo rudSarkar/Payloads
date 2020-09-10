@@ -1,4 +1,4 @@
-If you're not sure that which type of extenstion are avialable in your waybackurs you can use the `egrep`
+If you're not sure that which type of extenstion are avialable in your waybackurls you can use the `egrep`
 
 ```
 root@kali:~/hek/domains/example$ cat example-target-wayback-list.txt | egrep -i -E -o "\.{1}\w*$" | sort -su
