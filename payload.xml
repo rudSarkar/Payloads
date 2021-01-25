@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locale>
+  <Backend>
+    <Core>
+      <item type="label" name="Email">
+        <translation language="en"><![CDATA["><script>alert("TEST")</script>]]></translation>
+      </item>
+    </Core>
+    <Extensions>
+      <item type="label" name="Mailmotor">
+        <translation language="en"><![CDATA["><script>alert("TEST")</script>]]></translation>
+      </item>
+    </Extensions>
+  </Backend>
+</locale>
