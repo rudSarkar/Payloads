@@ -1,0 +1,1 @@
+shodan search http.favicon.hash:192671406 --fields ip_str,port --separator " " | awk '{print $1":"$2}' | while read host do ;do curl -s http://$host/ui/vropspluginui/rest/services/getstatus | grep -q states && \printf "$host \033[0;31mVulnerable\n" || printf "$host \033[0;32mNot Vulnerable\n";done;
